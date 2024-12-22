@@ -1,4 +1,4 @@
-# Custom-Rom-Builder-For-Samsung-Galaxy-A03
+# Custom-Rom-Builder-For-Samsung-Galaxy-S24FE
 
 
 - This tool can create ODIN flashable super.tar
