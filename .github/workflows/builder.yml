@@ -1,4 +1,4 @@
-name: Custom Rom Builder Samsung Galaxy A03
+name: Custom Rom Builder Samsung Galaxy S24FE
 permissions:
   contents: write
 on:
@@ -14,15 +14,15 @@ on:
         NAME:
               description: 'Rom Name'
               required: true
-              default: 'aosp-arm64-ab-gapps-14.0-a03.7z'
+              default: 'aosp-arm64-ab-gapps-14.0-s24fe.7z'
         VERSION:
               description: 'Baseband Version'
               required: true
-              default: 'A035FXXU4CWI1'
+              default: 'S721BXXS2AXI5'
         VENDOR:
               description: 'Enter Direct Link Of Your Version Vendor'
               required: true
-              default: 'https://sourceforge.net/projects/a03-files/files/A035FXXU4CWI1/vendor.img'
+              default: 'https://wetransfer.com/downloads/a19a338f0beead1ccae8a4f46673244f20241222150508/34865c?t_exp=1735139108&t_lsid=36c9732e-3d2e-40ae-b7fa-a06e8dabbdbb&t_network=link&t_rid=ZW1haWx8Njc2ODJhYTYzYjQ1MTBjYmM4ZGFmODA0&t_s=download_link&t_ts=1734879929'
 jobs:
   Build:
     runs-on: ubuntu-latest
@@ -76,7 +76,7 @@ jobs:
         name: ${{ github.event.inputs.NAME }}-${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
-            Device: Samsung Galaxy A03
+            Device: Samsung Galaxy S24FE
             Version: ${{ github.event.inputs.VERSION }}
             Rom Name: ${{ github.event.inputs.NAME }}
             Flash: Extract the 7z file and flash through ODIN in AP Section.
